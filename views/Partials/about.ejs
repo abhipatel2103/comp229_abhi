@@ -1,44 +1,46 @@
 
 <main class="container">
-		<div class="jumbotron jumbotron-fluid wrapper">
-			
-			<h1 class="display-7 header-text"><%= title %></h1>
-			
-		</div>
-		<div><h1 class="display-7"><%= name %></h1></div>
-		<div class="background">
-			<img src="Assets/images/Abhi.jpg" style="height:250px" alt="Abhi's photo"/>
-			<h2 style="text-align: center">Hi, I'm Abhi Patel</h2>
-			<div class="text">
-			<p>
-				I am from India and have a bachelor's degree in computer Engineering.<br/><br/>
-
-				After that, I worked as SQL developer for more than 1 year and as a software specialist in a medical IT company 
-				for 2 years where I managed databases of multiple hospitals and provided technical support.<br/><br/>
-				
-				Currently, I have taken admission in an Artificial Intelligence Fast-track program to enhance my other skills
-				 like programming skills, data visualization skills and data analysis skills by learning important and fundamental 
-				 aspects of Artificial Intelligence. <br/><br/>
-
-				In my spare time, I like to do outdoor activities like swimming, dance, horse-riding and travelling.<br/><br/>
-
-				Professionally, I would like to become a data analyst in a reputed organization and would feel grateful to have
-				 a chance to suggest important decisions to the organization through my data analysis and related skills.
-			</p>
-			
-			</div>
-			<div>
-			<button type="button" class="btn btn-warning"><a href="/assets/images/resume.pdf" view>View My Resume</button>
-			
-			
-			<p></p>
-			
-			</div>
+	<div class="jumbotron jumbotron-fluid wrapper">
 		
+		<h1 class="display-7 header-text"><%= title %></h1>
+		
+	</div>
+	<div><h1 class="display-7"><%= name %></h1></div>
+		<div class="about-section">
+			<div class="row">
+				<div class="col-md-3">
+					<img class="profile-pic" src="Assets/images/Abhi.jpg" alt="Abhi's photo"/>
+				</div>
+				<div class="col-md-9">
+					<h2>Hi, I'm Abhi Patel</h2>
+					<div class="text">
+					<p>
+						I am from India and have a bachelor's degree in computer Engineering.<br/><br/>
+
+						After that, I worked as SQL developer for more than 1 year and as a software specialist in a medical IT company 
+						for 2 years where I managed databases of multiple hospitals and provided technical support.<br/><br/>
+						
+						Currently, I have taken admission in an Artificial Intelligence Fast-track program to enhance my other skills
+						like programming skills, data visualization skills and data analysis skills by learning important and fundamental 
+						aspects of Artificial Intelligence. <br/><br/>
+
+						In my spare time, I like to do outdoor activities like swimming, dance, horse-riding and travelling.<br/><br/>
+
+						Professionally, I would like to become a data analyst in a reputed organization and would feel grateful to have
+						a chance to suggest important decisions to the organization through my data analysis and related skills.
+					</p>
+					<button type="button" class="btn btn-warning"><a href="/assets/images/resume.pdf">View My Resume</a></button>
+				</div>
+			</div>
 		</div>
+	</div>
 </main>
 
 	<style>
+	.profile-pic {
+		width:100%;
+		border-radius: 100%;
+	}
 		.text{
 			text-align: left;
 			font-size: 13px;
@@ -98,4 +100,37 @@
 		.background{
 			background: #f5f5f5;
 		}
+		.jumbotron {
+			position: relative;
+			background: linear-gradient(to right, #EFEFBB, #D4D3DD);
+		}
+		.about-section {
+			padding: 20px;
+			color: #fff;
+			background: #000;
+		}
+		/****** Button CSS START *******/
+		.btn,
+		button,
+		input[type="submit"],
+		button[type="submit"]
+		 {
+			display:inline-block;
+			padding: 10px 30px;
+			color: #000;
+		}
+		.btn:hover,
+		button:hover,
+		input[type="submit"]:hover,
+		button[type="submit"]:hover {
+			background:#343a40;
+			color: #fff !important;
+			border-color: #343a40;
+		}
+		button a {color: #000; }
+		button a:hover { 
+			color: #fff; 
+			text-decoration: none;
+			}
+		/****** Button CSS END *******/
 	</style>
