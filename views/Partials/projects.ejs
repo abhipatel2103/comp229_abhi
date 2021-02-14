@@ -1,15 +1,65 @@
 
 <main class="container">
 		<div class="jumbotron jumbotron-fluid wrapper">
-			<div class="header-wrapper"><img src="Assets/images/banner.jpg" /></div>
+			
 			<h1 class="display-7 header-text"> <%= title %></h1>
 			
 		</div>
 		<div><h1 class="display-7"><%= name %></h1></div>
-		<div class="background"><p style="color:blue">Projects</p></div>
+		
+
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="card">
+			<div class="card-body">
+				<img src="Assets/images/smart_helmet2.jpg" class="card-img-top" alt="...">
+				<h5 class="card-title">Smart Helmet</h5>
+				<p class="card-text">•	Bike having a smart helmet will not start its engine if rider does not wear a smart helmet.<br/>
+					•	Furthermore, engine will stop after 30 seconds if riders remove the smart helmet while riding the bike.<br/>
+					•	Also, Bike will not start if rider is drunk.
+				</p>
+        
+      		</div>
+    	</div>
+  	</div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+	  	<img src="Assets/images/telehealth3.png" class="card-img-top" alt="...">
+
+        <h5 class="card-title">Telehealth</h5>
+        <p class="card-text">
+			• Telehealth is the use of digital information and communication technologies, 
+				such as computers and mobile devices, to access health care services remotely and manage your health care.<br/>
+			•	And, it can be accessed via different type of devices like, mobile, computer and ipad.
+		</p>
+        
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+	  <img src="Assets/images/car_spa.jpg" class="card-img-top" alt="...">
+
+        <h5 class="card-title">Automatic Car-spa Plant</h5>
+        <p class="card-text">
+			•	A plant that is able to wash,rub and dry the car automatically.<br/>
+			•	Additionally, plant is enabled with different settings of user interaction like selecting packages from gold, silver and platinum.
+		</p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
 </main>
 
 	<style>
+		.card{
+			
+			width: 300px;
+		}
 		.wrapper {
 			position: relative;
 		}
@@ -31,7 +81,7 @@
 		.header-text {
 			z-index: 2;
 			position: relative;
-			color: #fff;
+			color: #034077;
 			margin-left: 15px;
 		}
 		.logo{
