@@ -4,7 +4,11 @@
  * Module dependencies.
  */
 
-var app = require('./app');
+
+
+
+
+var app = require('./server/config/app');
 var debug = require('debug')('week-3-part2:server');
 var http = require('http');
 
@@ -88,3 +92,5 @@ function onListening() {
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
 }
+
+

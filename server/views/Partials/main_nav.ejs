@@ -7,7 +7,8 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
-      
+      <% var key %>
+
 		<% if (key == "home") { %>
 			<li class="nav-item active">
 		<% } else { %>
@@ -27,7 +28,7 @@
 		<% } else { %>
 			<li class="nav-item">
 		<% } %>
-        	<a class="nav-link" href="/Projects"> Projects</a>
+        	<a class="nav-link" href="/projects"> Projects</a>
       </li>
 	  	<% if (key == "services") { %>
 			<li class="nav-item active" >
@@ -36,6 +37,14 @@
 		<% } %>
         	<a class="nav-link" href="/services"> Services</a>
       </li>
+
+	  	<% if (key == "books") { %>
+			<li class="nav-item active" >
+		<% } else { %>
+			<li class="nav-item">
+		<% } %>
+        	<a class="nav-link" href="/book-list"> Books</a>
+      </li>
 	  	<% if (key == "contact") { %>
 			<li class="nav-item active" >
 		<% } else { %>
@@ -43,6 +52,7 @@
 		<% } %>
 	  		<a class="nav-link" href="/contact"> Contacts</a>
       </li>
+	
   </div>
 
   
